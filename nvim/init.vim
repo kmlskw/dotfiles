@@ -1,0 +1,14 @@
+source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/general/plugins.vim
+source $HOME/.config/nvim/general/autocommands.vim
+source $HOME/.config/nvim/general/mappings.vim
+source $HOME/.config/nvim/themes/space-vim-dark.vim
+source $HOME/.config/nvim/conf/fzf.vim
+source $HOME/.config/nvim/conf/lightline.vim
+source $HOME/.config/nvim/conf/nerdcommenter.vim
+source $HOME/.config/nvim/conf/netrw.vim
+source $HOME/.config/nvim/conf/nvim-lsp.vim
+source $HOME/.config/nvim/conf/rainbow.vim
+source $HOME/.config/nvim/conf/ripgrep.vim
+source $HOME/.config/nvim/conf/vc.vim
+source $HOME/.config/nvim/conf/vista.vim

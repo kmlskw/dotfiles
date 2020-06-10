@@ -1,0 +1,1 @@
+let g:no_vc_maps = 1
