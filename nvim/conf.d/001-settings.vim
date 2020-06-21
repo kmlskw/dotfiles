@@ -7,6 +7,7 @@ syntax on
 
 set autoindent
 set cmdheight=2
+set cindent
 set colorcolumn=0
 set cursorline
 set clipboard=unnamedplus
@@ -24,7 +25,6 @@ set nowritebackup
 set nrformats=
 set scrolloff=0
 set shiftwidth=2
-set shortmess+=c
 set showmatch
 set signcolumn=yes
 set smartcase
@@ -38,7 +38,7 @@ set tabstop=2
 set textwidth=80
 set undodir=~/.local/undodir
 set undofile
-set updatetime=300
+set updatetime=100
 set wrap
 set background=dark
 set termguicolors
@@ -47,11 +47,11 @@ hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
 " Show invisible characters
-set nolist 
+set nolist
 set listchars=tab:»\ ,eol:↲,nbsp:␣,trail:·,precedes:←,extends:→
 nnoremap <Leader>l :set list!<Return>
 
-" Toggle line numbers
+" Toggle line numbers together with sign column
 set number
 set relativenumber
 function! ToggleSignColumn()

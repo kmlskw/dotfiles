@@ -25,6 +25,10 @@ nnoremap gp `[v`]
 map <F6> :setlocal spell! spelllang=en_us<CR>
 map <F7> :setlocal spell! spelllang=pl<CR>
 
+" Jump to the start/end of the current line.
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>^
+
 " Preserve indents when moving lines
 nnoremap <M-j> :m .+1<Return>==
 nnoremap <M-k> :m .-2<Return>==
@@ -34,3 +38,5 @@ vnoremap <M-k> :m '<-2<Return>gv=gv
 " nnoremap <M-k> mz:m-2<cr>`z
 " vnoremap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 " vnoremap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+

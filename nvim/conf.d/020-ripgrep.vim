@@ -1,4 +1,5 @@
-" Detect root and .gitignore
+" true if you want to find project root from cwd 
+" (detect root directory and .gitignore)
 if executable('rg')
     let g:rg_derive_root='true'
 endif
@@ -12,3 +13,6 @@ function! RipgrepFzf(query, fullscreen)
 endfunction
 
 command! -nargs=* -bang Rg call RipgrepFzf(<q-args>, <bang>0)
+
+nnoremap <Leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
+nnoremap <Leader>ps :Rg<SPACE>
