@@ -42,3 +42,22 @@ vnoremap <M-k> :m '<-2<Return>gv=gv
 " Go to help under cursor word
 nnoremap <Leader>phw :h <C-R>=expand("<cword>")<CR><CR>
 
+" Show invisible characters
+set nolist
+set listchars=tab:»\ ,eol:↲,nbsp:␣,trail:·,precedes:←,extends:→
+nnoremap <silent> <Leader><Leader>l :set list!<Return>
+
+" Toggle line numbers together with sign column
+set number
+set relativenumber
+function! ToggleSignColumn()
+  if !exists("b:signcolumn_on") || b:signcolumn_on
+    set signcolumn=no
+    let b:signcolumn_on=0
+  else
+    set signcolumn=yes
+    let b:signcolumn_on=1
+  endif
+endfunction
+noremap <silent> <Leader><Leader>n :set norelativenumber! number!<CR>:call ToggleSignColumn()<Return>
+
