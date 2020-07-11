@@ -64,4 +64,4 @@ function! ToggleSignColumn()
     let b:signcolumn_on=1
   endif
 endfunction
-noremap <Leader>n :set norelativenumber! number!<CR>:call ToggleSignColumn()<Return>
+noremap <Leader><Leader>n :set norelativenumber! number!<CR>:call ToggleSignColumn()<Return>
