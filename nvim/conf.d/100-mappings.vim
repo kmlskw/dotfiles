@@ -27,7 +27,7 @@ map <F7> :setlocal spell! spelllang=pl<CR>
 
 " Jump to the start/end of the current line.
 inoremap <C-e> <C-o>$
-inoremap <C-a> <C-o>^
+inoremap <C-b> <C-o>^
 
 " Preserve indents when moving lines
 nnoremap <M-j> :m .+1<Return>==
@@ -39,4 +39,6 @@ vnoremap <M-k> :m '<-2<Return>gv=gv
 " vnoremap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 " vnoremap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
+" Go to help under cursor word
+nnoremap <Leader>phw :h <C-R>=expand("<cword>")<CR><CR>
 

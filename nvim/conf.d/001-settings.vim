@@ -30,6 +30,7 @@ set signcolumn=yes
 set smartcase
 set smartindent
 set smarttab
+set shortmess+=c
 set softtabstop=2
 set splitbelow
 set splitright

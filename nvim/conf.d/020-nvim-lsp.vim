@@ -30,6 +30,16 @@ require'nvim_lsp'.dockerls.setup{on_attach=on_attach_vim};
 require'nvim_lsp'.jsonls.setup{on_attach=on_attach_vim};
 require'nvim_lsp'.pyls.setup{on_attach=on_attach_vim};
 require'nvim_lsp'.rust_analyzer.setup{on_attach=on_attach_vim};
+require'nvim_lsp'.sumneko_lua.setup{
+    cmd = {"~/Sources/lua-language-server/bin/Linux/lua-language-server", "-E", "~/Sources/lua-language-server/main.lua"},
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = {"vim"}
+            }
+        }
+    }
+};
 require'nvim_lsp'.sumneko_lua.setup{on_attach=on_attach_vim};
 require'nvim_lsp'.tsserver.setup{on_attach=on_attach_vim};
 require'nvim_lsp'.yamlls.setup{on_attach=on_attach_vim};
@@ -70,7 +80,6 @@ autocmd Filetype \
 			\typescriptreact,
 			\typescript.tsx,
 			\lua,
-			\rust,
 			\python,
 			\json,
 			\rust,
@@ -85,16 +94,16 @@ autocmd FileType go nnoremap <silent> gI    <cmd>call LSPGoImportsReload()<CR>
 autocmd BufEnter * lua require'completion'.on_attach()
 
 
-nnoremap <silent> <Leader>gd    <cmd>lua vim.lsp.buf.declaration()<CR>
-nnoremap <silent> <Leader><c-]> <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> <Leader>K     <cmd>lua vim.lsp.buf.hover()<CR>
-nnoremap <silent> <Leader>gD    <cmd>lua vim.lsp.buf.implementation()<CR>
-nnoremap <silent> <Leader><c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
-nnoremap <silent> <Leader>1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
-nnoremap <silent> <Leader>gr    <cmd>lua vim.lsp.buf.references()<CR>
-nnoremap <silent> <Leader>g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
-nnoremap <silent> <Leader>gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
-nnoremap <silent> <Leader>gF    <cmd>lua vim.lsp.buf.formatting()<CR>
+nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
+nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> K     <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> <c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
+nnoremap <silent> 1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
+nnoremap <silent> gr    <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
+nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
+nnoremap <silent> gF    <cmd>lua vim.lsp.buf.formatting()<CR>
 
 function! LSPHover()
 lua << EOF
@@ -137,9 +146,6 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noinsert,noselect
-
-" Avoid showing message extra message when using completion
-set shortmess+=c
 
 " By default auto popup is enabled
 let g:completion_enable_auto_popup = 1
