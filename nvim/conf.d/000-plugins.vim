@@ -15,8 +15,9 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'junegunn/seoul256.vim'
 
   " Syntax
+  Plug 'maxmellon/vim-jsx-pretty'
   Plug 'sheerun/vim-polyglot'
-  Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+  " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
   " UI
   Plug 'itchyny/lightline.vim'
@@ -40,6 +41,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'jremmen/vim-ripgrep'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-fugitive'
+  Plug 'junegunn/gv.vim'
   Plug 'tpope/vim-rhubarb'
   Plug 'tpope/vim-unimpaired'
   Plug 'tpope/vim-apathy'
@@ -64,6 +66,9 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'davinche/godown-vim'
   Plug 'wellle/context.vim'
   Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
+  Plug 'will133/vim-dirdiff'
+  Plug 'AndrewRadev/linediff.vim'
+  Plug 'alvan/vim-closetag'
 
   " IDE
   " Plug 'neovim/nvim-lsp'

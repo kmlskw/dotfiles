@@ -46,3 +46,8 @@ set termguicolors
 
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
+
+" Highlight ES6 template strings
+" hi link javaScriptTemplateDelim String
+" hi link javaScriptTemplateVar Text
+" hi link javaScriptTemplateString String

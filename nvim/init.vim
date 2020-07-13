@@ -22,5 +22,8 @@ source $HOME/.config/nvim/conf.d/020-ripgrep.vim
 source $HOME/.config/nvim/conf.d/020-undotree.vim
 source $HOME/.config/nvim/conf.d/020-vc.vim
 source $HOME/.config/nvim/conf.d/020-vista.vim
+source $HOME/.config/nvim/conf.d/020-fugitive.vim
+source $HOME/.config/nvim/conf.d/020-polyglot.vim
+source $HOME/.config/nvim/conf.d/020-closetag.vim
 source $HOME/.config/nvim/conf.d/099-autocommands.vim
 source $HOME/.config/nvim/conf.d/100-mappings.vim
