@@ -8,7 +8,9 @@ command! ReloadVimrc :source $MYVIMRC
 tnoremap <Esc> <C-\><C-n>
 
 " Save current buffer
-noremap <Leader>w :w<Return>
+" Set eventignore to "all" and save current buffer
+" Usefull for saving without autoformat.
+noremap <Leader>w :noautocmd w<Return>
 
 " Resize
 nnoremap <Leader>= :vertical resize +10<CR>

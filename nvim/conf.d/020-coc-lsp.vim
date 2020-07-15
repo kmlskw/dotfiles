@@ -9,7 +9,9 @@ let g:coc_global_extensions = [
 	\ "coc-snippets",
   \ "coc-ultisnips",
   \ "coc-tailwindcss",
-  \ "coc-tsserver"]
+  \ "coc-tsserver",
+  \ "coc-java",
+  \ "coc-highlight"]
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.

@@ -1,9 +1,12 @@
 #!/bin/sh
-# create config directory
-mkdir -p ~/.config
 
-# create symbolic link
-DIR="${PWD}/nvim"
-ln -s -f ${DIR} ~/.config/nvim
-DIR="${PWD}/.bash_aliases"
-ln -s -f ${DIR} ~/.bash_aliases
+mkdir -p ~/.config
+PWD=${PWD}
+
+# create symbolic links if not exists
+if [ ! -L ~/.config/nvim ] && [ ! -e ~/.config/nvim ]; then
+  ln -s ${PWD}/nvim ~/.config/nvim
+  echo "[nVim]: Installed successfully"
+else
+  echo "[nVim]: Already installed. Remove it first."
+fi
