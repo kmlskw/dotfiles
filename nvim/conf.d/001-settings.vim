@@ -36,7 +36,7 @@ set splitbelow
 set splitright
 set statusline=%-10.3n
 set tabstop=2
-set textwidth=80
+set textwidth=0
 set undodir=~/.local/undodir
 set undofile
 set updatetime=100

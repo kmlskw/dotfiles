@@ -69,6 +69,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'will133/vim-dirdiff'
   Plug 'AndrewRadev/linediff.vim'
   Plug 'alvan/vim-closetag'
+  Plug 'ashisha/image.vim'
 
   " IDE
   " Plug 'neovim/nvim-lsp'
