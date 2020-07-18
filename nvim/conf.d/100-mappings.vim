@@ -12,10 +12,6 @@ tnoremap <Esc> <C-\><C-n>
 " Usefull for saving without autoformat.
 noremap <Leader>w :noautocmd w<Return>
 
-" Resize
-nnoremap <Leader>= :vertical resize +10<CR>
-nnoremap <Leader>- :vertical resize -10<CR>
-
 " Stop the highlighting
 nnoremap <Leader><CR> :noh<CR>
 vnoremap <Leader><CR> :noh<CR>
@@ -41,9 +37,6 @@ vnoremap <M-k> :m '<-2<Return>gv=gv
 " vnoremap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 " vnoremap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
-" Go to help under cursor word
-nnoremap <Leader>phw :h <C-R>=expand("<cword>")<CR><CR>
-
 " Show invisible characters
 set nolist
 set listchars=tab:»\ ,eol:↲,nbsp:␣,trail:·,precedes:←,extends:→
@@ -62,4 +55,3 @@ function! ToggleSignColumn()
   endif
 endfunction
 noremap <silent> <Leader><Leader>n :set norelativenumber! number!<CR>:call ToggleSignColumn()<Return>
-

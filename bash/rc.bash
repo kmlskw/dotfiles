@@ -3,3 +3,4 @@
 . ~/dotfiles/bash/mc.bash
 . ~/dotfiles/bash/vscode.bash
 . ~/dotfiles/bash/perl.bash
+. ~/dotfiles/bash/editor.bash

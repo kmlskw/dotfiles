@@ -1,10 +1,8 @@
-filetype plugin on
-filetype indent on
-
 let mapleader = " "
 
+filetype plugin on
+filetype indent on
 syntax on
-
 set autoindent
 set cmdheight=2
 set cindent
@@ -43,11 +41,3 @@ set updatetime=100
 set wrap
 set background=dark
 set termguicolors
-
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
-
-" Highlight ES6 template strings
-" hi link javaScriptTemplateDelim String
-" hi link javaScriptTemplateVar Text
-" hi link javaScriptTemplateString String
