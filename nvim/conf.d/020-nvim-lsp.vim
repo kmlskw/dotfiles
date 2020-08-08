@@ -30,8 +30,11 @@ require'nvim_lsp'.dockerls.setup{on_attach=on_attach_vim};
 require'nvim_lsp'.jsonls.setup{on_attach=on_attach_vim};
 require'nvim_lsp'.pyls.setup{on_attach=on_attach_vim};
 require'nvim_lsp'.rust_analyzer.setup{on_attach=on_attach_vim};
+
+
+local lua_server_path = "/home/kamil/Sources/lua-language-server/"
 require'nvim_lsp'.sumneko_lua.setup{
-    cmd = {"~/Sources/lua-language-server/bin/Linux/lua-language-server", "-E", "~/Sources/lua-language-server/main.lua"},
+    cmd = {lua_server_path .. "bin/Linux/lua-language-server", "-E", lua_server_path .. "main.lua"},
     settings = {
         Lua = {
             diagnostics = {
@@ -40,7 +43,6 @@ require'nvim_lsp'.sumneko_lua.setup{
         }
     }
 };
-require'nvim_lsp'.sumneko_lua.setup{on_attach=on_attach_vim};
 require'nvim_lsp'.tsserver.setup{on_attach=on_attach_vim};
 require'nvim_lsp'.yamlls.setup{on_attach=on_attach_vim};
 EOF

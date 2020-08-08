@@ -4,3 +4,5 @@
 . ~/dotfiles/bash/vscode.bash
 . ~/dotfiles/bash/perl.bash
 . ~/dotfiles/bash/editor.bash
+. ~/dotfiles/bash/git.bash
+. ~/dotfiles/bash/history.bash
