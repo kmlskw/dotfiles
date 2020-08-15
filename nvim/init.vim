@@ -14,7 +14,7 @@ source $HOME/.config/nvim/conf.d/020-nerdcommenter.vim
 source $HOME/.config/nvim/conf.d/020-netrw.vim
 source $HOME/.config/nvim/conf.d/020-nerdtree.vim
 source $HOME/.config/nvim/conf.d/020-devicons.vim
-source $HOME/.config/nvim/conf.d/020-nvim-lsp.vim
+" source $HOME/.config/nvim/conf.d/020-nvim-lsp.vim
 source $HOME/.config/nvim/conf.d/020-coc-lsp.vim
 source $HOME/.config/nvim/conf.d/020-quick-scope.vim
 source $HOME/.config/nvim/conf.d/020-rainbow.vim
