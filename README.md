@@ -12,7 +12,9 @@ $ cd ~/dotfiles && sh install.sh
 ## configuration
 
 ```sh
-sudo apt install curl build-essentials dpkg-dev fakeroot cmake fakeroot
+$ sudo apt install curl build-essential dpkg-dev fakeroot cmake fakeroot ruby ruby-dev python3-pip python2 liblocal-lib-perl cpanminus xclip
+$ sudo apt build-dep vim neovim
+
 ```
 
 ### node
@@ -35,13 +37,13 @@ export NVM_DIR="$HOME/.nvm"
 To get the latest LTS version of node and migrate your existing installed packages, use
 
 ```sh
-$ nvm install --lts --reinstall-packages-from=current
+$ nvm install --lts # --reinstall-packages-from=current
+$ nvm install -g neovim
 ```
 
 ### python
 
 ```sh
-$ sudo apt install python3-pip python2
 $ curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
 $ sudo python2 get-pip.py
 $ pip install neovim
@@ -51,7 +53,6 @@ $ pip3 install neovim
 ### perl
 
 ```sh
-$ sudo apt-get install liblocal-lib-perl cpanminus
 $ perl -MCPAN -Mlocal::lib -e 'CPAN::install(LWP)'
 $ sudo gem install neovim
 ```
@@ -59,7 +60,6 @@ $ sudo gem install neovim
 ### neovim
 
 ```sh
-$ sudo apt build-dep neovim
 $ git clone https://github.com/neovim/neovim.git
 $ cd neovim && git checkout tags/v0.4.4
 $ make CMAKE_BUILD_TYPE=RelWithDebInfo
