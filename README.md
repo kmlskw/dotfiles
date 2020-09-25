@@ -12,7 +12,7 @@ $ cd ~/dotfiles && sh install.sh
 ## configuration
 
 ```sh
-$ sudo apt install curl build-essential dpkg-dev fakeroot cmake fakeroot ruby ruby-dev python3-pip python2 liblocal-lib-perl cpanminus xclip
+$ sudo apt install curl build-essential dpkg-dev fakeroot cmake fakeroot ruby ruby-dev python3-pip python2 python liblocal-lib-perl cpanminus xclip
 $ sudo apt build-dep vim neovim
 
 ```
