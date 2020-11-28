@@ -6,3 +6,4 @@
 . ~/dotfiles/bash/editor.bash
 . ~/dotfiles/bash/git.bash
 . ~/dotfiles/bash/history.bash
+. ~/dotfiles/bash/vte.bash

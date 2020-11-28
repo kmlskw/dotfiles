@@ -13,7 +13,7 @@ $ cd ~/dotfiles && sh install.sh
 
 ```sh
 $ sudo apt install curl build-essential dpkg-dev fakeroot cmake fakeroot ruby ruby-dev python3-pip python2 python liblocal-lib-perl cpanminus xclip
-$ sudo apt build-dep vim neovim
+$ sudo apt build-dep vim neovim libvte-2.91-common
 
 ```
 
@@ -66,4 +66,9 @@ $ make CMAKE_BUILD_TYPE=RelWithDebInfo
 $ sudo make install
 $ nvim
 :checkhealth
+```
+
+### vte
+```sh
+$ ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 ```
