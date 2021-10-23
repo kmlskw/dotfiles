@@ -1,0 +1,9 @@
+configuration {
+  modi: "window,drun,ssh,combi";
+  theme: "android_notification";
+  font: "hack 9";
+  combi-modi: "window,drun,ssh";
+  show-icons: true;
+  icon-theme: "Papirus-Dark";
+  drun-show-actions: true;
+}
