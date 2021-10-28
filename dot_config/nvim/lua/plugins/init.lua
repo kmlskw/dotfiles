@@ -7,11 +7,11 @@ local plugEnd = fn["plug#end"]
 
 plugLoad()
 plugBegin("~/.config/nvim/plugged")
--- fzf
+cmd [[Plug 'nvim-lua/plenary.nvim']]
+cmd [[Plug 'nvim-telescope/telescope.nvim']]
+cmd [[Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}]]
 cmd [[Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }]]
 cmd [[Plug 'junegunn/fzf.vim']]
-
--- vcs
 cmd [[Plug 'tpope/vim-fugitive']]
 
 -- appearance
@@ -19,4 +19,5 @@ cmd [[Plug 'rakr/vim-one']]
 cmd [[Plug 'jacoborus/tender.vim']]
 cmd [[Plug 'dracula/vim']]
 cmd [[Plug 'crusoexia/vim-monokai']]
+cmd [[Plug 'kyazdani42/nvim-web-devicons']]
 plugEnd()
