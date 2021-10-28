@@ -13,6 +13,7 @@ local inoremap = utils.inoremap
 local vnoremap = utils.vnoremap
 
 require("plugins")
+require("highlight-yank")
 
 -- ------- --
 -- General --

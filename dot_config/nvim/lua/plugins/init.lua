@@ -13,6 +13,8 @@ cmd [[Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}]]
 cmd [[Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }]]
 cmd [[Plug 'junegunn/fzf.vim']]
 cmd [[Plug 'tpope/vim-fugitive']]
+cmd [[Plug 'tpope/vim-commentary']]
+
 
 -- appearance
 cmd [[Plug 'rakr/vim-one']]
