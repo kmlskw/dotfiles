@@ -276,9 +276,9 @@ mode "$mode_launcher" {
 set $mode_screenshot Screenshot: [f]ull [c]urrent [s]elect
 bindsym $mod+a mode "$mode_screenshot"; bar mode invisible
 mode "$mode_screenshot" {
-    bindsym --release s exec scrot --select --freeze; mode "default"; exec notify-send --expire-time=1000 "✅ Selected Screenshot"
-    bindsym --release c exec scrot --focused; mode "default"; exec notify-send --expire-time=1000 "✅ Current Window Screenshot"
-    bindsym --release f exec scrot; mode "default"; exec notify-send --expire-time=1000 "✅ Full Screenshot"
+    bindsym --release s exec scrot '%Y-%m-%d_%H-%M-%S_%s_$wx$h_scrot.jpg' -e 'mv $f ~/Pictures/' --select --freeze; mode "default"; exec notify-send --expire-time=1000 "✅ Selected Screenshot"
+    bindsym --release c exec scrot '%Y-%m-%d_%H-%M-%S_%s_$wx$h_scrot.jpg' -e 'mv $f ~/Pictures/' --focused; mode "default"; exec notify-send --expire-time=1000 "✅ Current Window Screenshot"
+    bindsym --release f exec scrot '%Y-%m-%d_%H-%M-%S_%s_$wx$h_scrot.jpg' -e 'mv $f ~/Pictures/'; mode "default"; exec notify-send --expire-time=1000 "✅ Full Screenshot"
 
     bindsym Escape mode "default"
     bindsym Return mode "default"
