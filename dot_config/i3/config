@@ -255,8 +255,8 @@ bar {
 
 # You can have multiple sets of bindings by using different binding modes. When you switch to another binding mode, all bindings from the current mode are released and only the bindings defined in the new mode are valid for as long as you stay in that binding mode.
 # https://i3wm.org/docs/userguide.html#binding_modes
-set $mode_launcher Launch: [g]oogle Chrome [f]irefox [c]ode [s]ublime [k]rusader [d]olphin [p]avucontrol
-bindsym $mod+o mode "$mode_launcher"
+set $mode_launcher Launch: [g]oogle Chrome [f]irefox [c]ode [s]ublime [k]rusader [d]olphin [t]hunar  [p]avucontrol [x]kill
+bindsym $mod+o mode "$mode_launcher"; bar mode hide
 mode "$mode_launcher" {
     bindsym g exec google-chrome --new-window https://www.google.pl; mode "default"
     bindsym f exec firefox; mode "default"
@@ -265,6 +265,20 @@ mode "$mode_launcher" {
     bindsym p exec pavucontrol-qt; mode "default"
     bindsym c exec code --new-window; mode "default"
     bindsym s exec subl --launch-or-new-window; mode "default"
+    bindsym t exec thunar; mode "default"
+    bindsym x --release exec xkill; mode  "default"
+
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+    bindsym $mod+o mode "default"
+}
+
+set $mode_screenshot Screenshot: [f]ull [c]urrent [s]elect
+bindsym $mod+a mode "$mode_screenshot"; bar mode invisible
+mode "$mode_screenshot" {
+    bindsym --release s exec scrot --select --freeze; mode "default"; exec notify-send --expire-time=1000 "✅ Selected Screenshot"
+    bindsym --release c exec scrot --focused; mode "default"; exec notify-send --expire-time=1000 "✅ Current Window Screenshot"
+    bindsym --release f exec scrot; mode "default"; exec notify-send --expire-time=1000 "✅ Full Screenshot"
 
     bindsym Escape mode "default"
     bindsym Return mode "default"
