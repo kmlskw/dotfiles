@@ -1,0 +1,64 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "heading.1.markdown entity.name.section.markdown, heading.1.markdown punctuation.definition.heading.markdown",
+        "settings": {
+          "fontStyle": "bold",
+          "foreground": "#f44747"
+        }
+      },
+      {
+        "scope": "heading.2.markdown entity.name.section.markdown, heading.2.markdown punctuation.definition.heading.markdown",
+        "settings": {
+          "fontStyle": "bold",
+          "foreground": "#d19a66"
+        }
+      },
+      {
+        "scope": "heading.3.markdown entity.name.section.markdown, heading.3.markdown punctuation.definition.heading.markdown",
+        "settings": {
+          "fontStyle": "bold",
+          "foreground": "#89ca78"
+        }
+      },
+      {
+        "scope": "heading.4.markdown entity.name.section.markdown, heading.4.markdown punctuation.definition.heading.markdown",
+        "settings": {
+          "foreground": "#61afef"
+        }
+      },
+      {
+        "scope": "heading.5.markdown entity.name.section.markdown, heading.5.markdown punctuation.definition.heading.markdown",
+        "settings": {
+          "foreground": "#c678dd"
+        }
+      },
+      {
+        "scope": "heading.6.markdown entity.name.section.markdown, heading.6.markdown punctuation.definition.heading.markdown",
+        "settings": {
+          "foreground": "#5c6370"
+        }
+      }
+    ]
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
+  "markdown.preview.doubleClickToSwitchToEditor": false,
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.linux": "/home/kamil/.config/nvim/lua/plugins/vscode.lua",
+  "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 2,
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.editor.showTabs": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.list.openMode": "doubleClick",
+  "workbench.sideBar.location": "right",
+  "workbench.tree.expandMode": "doubleClick"
+}
