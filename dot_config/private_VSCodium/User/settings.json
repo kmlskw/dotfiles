@@ -1,5 +1,29 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.enabled": true,
+  "editor.cursorSurroundingLines": 10,
+  "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6,
   "editor.minimap.enabled": false,
+  "editor.showFoldingControls": "always",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -49,12 +73,20 @@
   "files.associations": {
     "*.mdx": "markdown"
   },
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "hediet.vscode-drawio.resizeImages": null,
+  "hediet.vscode-drawio.theme": "Kennedy",
   "markdown.preview.doubleClickToSwitchToEditor": false,
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+  "notebook.showFoldingControls": "always",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.linux": "/home/kamil/.config/nvim/lua/plugins/vscode.lua",
   "window.menuBarVisibility": "toggle",
   "window.zoomLevel": 2,
-  "workbench.activityBar.visible": false,
   "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vscode-icons",
