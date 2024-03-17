@@ -18,7 +18,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.enabled": true,
-  "editor.cursorSurroundingLines": 10,
+  "editor.cursorSurroundingLines": 1,
   "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontLigatures": true,
   "editor.lineHeight": 1.6,
@@ -86,11 +86,14 @@
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.linux": "/home/kamil/.config/nvim/lua/plugins/vscode.lua",
   "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": 2,
   "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vscode-icons",
   "workbench.list.openMode": "doubleClick",
   "workbench.sideBar.location": "right",
-  "workbench.tree.expandMode": "doubleClick"
+  "workbench.tree.expandMode": "doubleClick",
+  "editor.cursorBlinking": "solid",
+  "editor.lineNumbers": "relative",
+  "window.zoomLevel": 1,
+  "workbench.activityBar.visible": false
 }
